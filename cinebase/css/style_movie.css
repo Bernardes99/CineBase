@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(3, 19, 39);
+    font-family: sans-serif;
+    color: white;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col-container {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.column-left {
+    display: table-cell;
+}
+
+.column-left#left1 {
+    width: 80%;
+}
+
+.column-left#left2 {
+    width: 55%;
+}
+
+.column-right {
+    display: table-cell;
+    align-items: center;
+    text-align: center;
+}
+
+.column-right#right1 {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+#right2 {
+    text-align: center;
+    vertical-align: center;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/* TEXTO */
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    margin-bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+a.link-trailer{
+    color: white;
+    text-decoration: underline;
+}
+a.link-trailer:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+
+/* ICONS */
+
+.iconify {
+    width: 24px;
+    height: 24px;
+}
+
+#details {
+    margin: 5px;
+    color: rgb(162, 137, 247);
+}
+
+#imdb {
+    margin: 5px;
+    color: rgb(238, 206, 73);
+}
+
+#heart {
+    margin-right: 10px;
+    color: white;
+}
+
+/* SIPNOSE */
+
+.synopsis-box {
+    width: 95%;
+    position: relative;
+    border: 1px solid rgb(34, 48, 65);
+    padding: 5%;
+    background: rgb(34, 48, 65);
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.synopsis-box p {
+    width: auto;
+    height: auto;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+/* FAVORITOS */
+
+.fav-button {
+    background-color: rgb(0, 67, 168);
+    border: 1px solid rgb(0, 67, 168);
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 4px 2px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fav-button:hover {
+    background-color: rgb(0, 53, 133);
+    border: 1px solid rgb(0, 53, 133);
+}
+
+/* IMAGEM */
+
+img {
+    padding: 5px;
+    width: 200px;
+}

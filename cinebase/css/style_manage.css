@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 19, 39);
+    font-family: sans-serif;
+    color: white;
+}
+
+main {
+    background-color: rgb(3, 19, 39);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* TITULO */
+
+.container {
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.iconify {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#horizontal {
+    width: 100%;
+    border: 1px solid white;
+}
+
+/* FILTROS + PESQUISA */
+
+.options {
+    align-items: top;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    align-items: top;
+} 
+
+/* DROPDOWN */
+
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: rgb(0, 67, 168);
+    background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select */
+.select {
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 2.5em;
+    line-height: 3;
+    background: rgb(0, 67, 168);
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: rgb(0, 67, 168);
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+/* Transition */
+.select:hover::after {
+    color: rgb(0, 114, 245);
+}
+
+/* BARRA PESQUISA */
+
+form .contain-search {
+    width: 100%;
+    align-items: center;
+}
+
+form .contain-search input[type=text] {
+    border: 1px solid grey;
+    background: #f1f1f1;
+    float: left;
+    width: 50%;
+    height: 3em;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.contain-search button {
+    border: 1px solid rgb(21, 130, 255);
+    background: rgb(21, 130, 255);
+    float: left;
+    width: 10%;
+    height: 3em;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    border-left: none;
+    cursor: pointer;
+}
+
+.contain-search button:hover {
+    background: rgb(0, 114, 245);
+    transition: 0.3s;
+}
+
+.contain-search::after {
+    content: "";
+    clear: both;
+    display: table;   
+}
+
+.contain-search input[type=checkbox] {
+    width: auto;
+    padding: 10px;
+}
+
+.contain-search label {
+    color: white;
+}
+
+/* FILTROS */
+.contain-search .check_boxes {
+    font-size: 12px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-content: center;
+}
+
+/* RESULTADOS DA PESQUISA */
+
+.wrap {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: rgb(34, 48, 65);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.search_result {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th, td {
+    border-bottom: 1px solid none;
+    width: 150px;
+    padding: 7px;
+}
+
+.table-button {
+    border: none;
+    color: white;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 67, 168);
+    border: 1px solid rgb(0, 67, 168);
+}
+
+.table-button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgb(0, 53, 133);
+    border: 1px solid rgb(0, 53, 133);
+}
+
+#readmit {
+    background: rgb(32, 141, 37);
+    border: 1px solid rgb(32, 141, 37);
+}
+
+#readmit:hover {
+    background: rgb(0, 131, 7);
+    border: 1px solid rgb(0, 131, 7);
+}
+
+#kick {
+    background: rgb(117, 8, 8);
+    border: 1px solid rgb(117, 8, 8);
+}
+
+#kick:hover {
+    background: rgb(105, 0, 0);
+    border: 1px solid rgb(105, 0, 0);
+}
+

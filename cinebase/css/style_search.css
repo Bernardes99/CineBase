@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 19, 39);
+    font-family: sans-serif;
+    color: white;
+}
+
+main {
+    background-color: rgb(3, 19, 39);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#horizontal {
+    width: 100%;
+    border: 1px solid white;
+}
+
+
+/* RESULTADOS DA PESQUISA */
+
+.wrapper {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: rgb(34, 48, 65);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.search_result {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th,
+td {
+    /*border-bottom: 1px solid rgb(25, 39, 56);*/
+    width: 150px;
+    padding: 7px;
+}
+
+.table-button {
+    border: none;
+    color: white;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 67, 168);
+    border: 1px solid rgb(0, 67, 168);
+}
+
+.table-button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgb(0, 53, 133);
+    border: 1px solid rgb(0, 53, 133);
+}
+
+
+/* FILTROS + PESQUISA */
+
+.filters-container {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center
+}
+
+.flex-container {
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-clear {
+    justify-content: center;
+    width: 10%;
+}
+
+
+/* DROPDOWN */
+
+
+/* Reset Select */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: rgb(0, 67, 168);
+    background-image: none;
+}
+
+
+/* Remove IE arrow */
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/* Custom Select */
+
+.select {
+    margin-right: 5px;
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    height: 2.5em;
+    width: 8em;
+    line-height: 3;
+    background: rgb(0, 67, 168);
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Arrow */
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: rgb(0, 67, 168);
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+
+/* Transition */
+
+.select:hover::after {
+    color: rgb(0, 114, 245);
+}
+
+
+/* APPLY BUTTON */
+
+.apply-button {
+    background-color: rgb(21, 130, 255);
+    border: 1px solid rgb(21, 130, 255);
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 4px 2px;
+    margin-left: 10px;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    transition: 0.3s;
+    background: rgb(0, 114, 245);
+    border: 1px solid rgb(0, 114, 245);
+}
+
+.apply-button#clear {
+    margin: auto;
+    background-color: rgb(80, 24, 184);
+    border: 1px solid rgb(80, 24, 184);
+}
+
+.apply-button#clear:hover {
+    transition: 0.3s;
+    background: rgb(67, 7, 179);
+    border: 1px solid rgb(67, 7, 179);
+}
+
+
+/* CAIXAS TEXTO */
+
+.filters {
+    margin-right: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(0, 31, 68);
+}
+
+.filters p {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filter-text span {
+    font-size: 14px;
+}
+
+.filter-text input {
+    border-radius: 3px;
+    width: 60px;
+    height: 2em;
+    margin-right: 10px;
+    padding: 3px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.filters .error {
+    margin-top: 10px;
+}
+
+.filters .error p {
+    line-height: 4px;
+    font-weight: none;
+    font-family: 'Segoe UI', sans-serif;
+    color: red;
+    font-size: 14px;
+}

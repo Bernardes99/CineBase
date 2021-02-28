@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(3, 19, 39, 0.8), rgba(3, 19, 39, 0.8)), url("https://image.uczzd.cn/1485683633741904570.jpg?id=0&from=export");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+main{
+    margin: auto;
+    padding: 150px;
+    align-content: center;
+    align-items: center;
+}
+
+/* TITULO */
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* BARRA DE PESQUISA */
+
+form.wrapper {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    width: 60%;
+    padding: 10px;   
+}
+
+/* Search field */
+form.wrapper input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+}
+  
+/* Submit button */
+form.wrapper button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: rgb(21, 130, 255);
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgb(21, 130, 255);
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.wrapper  button:hover {
+    background: rgb(0, 114, 245);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Clear floats */
+form.wrapper::after {
+    content: "";
+    clear: both;
+    display: table;   
+}
+
+form.wrapper input[type=checkbox] {
+    margin: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    width: auto;
+    padding: 10px;
+}
+
+form.wrapper label {
+    color: white;
+}
+
+/* FILTROS */
+.check_boxes {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+

@@ -1,0 +1,113 @@
+/* BARRA DE NAVEGACAO */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(10, 37, 77);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    float: left;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold
+}
+
+.nav-options{
+    float: right;
+    vertical-align: center;
+}
+
+.nav-options li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 10px;
+}
+
+.nav-options li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 1px solid rgb(22, 85, 161);
+    background: rgb(22, 85, 161);
+}
+
+.nav-options li a:hover{
+    border: 1px solid rgb(4, 66, 141);
+    background: rgb(4, 66, 141);
+    transition: .5s;
+}
+
+.nav-options li form button{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 1px solid rgb(22, 85, 161);
+    background: rgb(22, 85, 161);
+    cursor: pointer;
+}
+
+.nav-options li form button:hover{
+    border: 1px solid rgb(4, 66, 141);
+    background: rgb(4, 66, 141);
+    transition: .5s;
+}
+
+/* PESQUISA */
+
+.search-nav{
+    margin-left: 20px;
+    width: 25%;
+    float: right;
+    vertical-align: center;
+}
+
+.search-nav form{
+    line-height: 80px;
+    margin-left: 10px;
+}
+
+.search-nav input[type=text] {
+    border-radius: 50px;
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    height: 2.5em;
+    border: none;
+}
+
+.search-nav button {
+    display: inline-block;
+    height: 2.5em;
+    color: white;
+    margin-left: 5px;
+    background-color: rgb(10, 37, 77);
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-nav button:hover {
+    color: rgb(21, 130, 255);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
